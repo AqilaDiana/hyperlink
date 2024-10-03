@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Home</title>
+    <style>
+      body {
+        font-family: arial, sans-serif;
+        display: flex;
+        justify-content: left;
+        height: 100vh;
+        margin: 0;
+        background-color: rgb(236, 236, 236);
+      }
+
+      .container {
+        text-align: center;
+        background-color: rgb(23, 95, 250);
+        padding: 50px;
+        border-radius: 10px;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+      }
+
+      h1 {
+        font-size: 60px;
+        color: rgb(242, 255, 60);
+      }
+
+      button {
+        background-color: rgb(242, 255, 60);
+        color: rgb(23, 95, 250);
+        padding: 20px 40xp;
+        font-size: 24px;
+        border: none;
+        border-radius: 10px;
+        cursor: pointer;
+        transition: background-color 0.3s, transform 0.3s;
+      }
+
+      button:hover {
+        background-color: rgb(23, 245, 71);
+        transform: scale(1.1);
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <h1><i>Selamat Datang</i></h1>
+      <button onclick="masuk()">Masuk</button>
+    </div>
+
+    <script>
+      function masuk() {
+        alert("anda masuk");
+        window.location.href = "hyperlink.html";
+      }
+    </script>
+  </body>
+</html>
